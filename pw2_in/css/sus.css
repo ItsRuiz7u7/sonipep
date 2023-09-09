@@ -1,0 +1,26 @@
+html {
+    background-color: #ffff;
+  }
+  body {
+    width: 600px;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+    logo {
+        width: 300px;
+        height: 200px;
+      }
+      
+  }
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    font-family: Arial, sans-serif;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }

@@ -1,0 +1,262 @@
+/* Configuración global */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuración de la fuente y fondo del cuerpo */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: blanchedalmond;
+  margin: 0; /* Agregamos margen cero para eliminar el margen predeterminado del cuerpo */
+}
+
+/* Encabezado */
+header {
+  padding: 20px 0;
+}
+
+/* Contenedor principal y contenido */
+div.contenedor,
+div.contenido {
+  max-width: 1200px; /* Cambiamos 'width' a 'max-width' para que sea más flexible en pantallas más pequeñas */
+  margin: 0 auto;
+}
+
+/* Navegación */
+.navegacion {
+  background-color: #00b8e4;
+}
+
+nav {
+  width: 100%; /* Hacemos que la barra de navegación ocupe todo el ancho disponible */
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0; /* Eliminamos el relleno predeterminado de la lista */
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #00b8e4;
+}
+
+/* Submenú */
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  background-color: rgba(0, 184, 228, 0.7);
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li:hover {
+  background-color: rgba(0, 184, 228, 0.7);
+}
+
+/* Contenido principal y barra lateral */
+div.contenido::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+main {
+  width: 70%;
+  float: left;
+  padding-right: 40px;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  margin-top: 30px;
+}
+
+/* Entradas */
+article {
+  margin-top: 30px;
+}
+
+h2 {
+  color: #00b8e4;
+  margin-bottom: 20px;
+}
+
+article::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+article img {
+  float: left;
+  max-width: 100%; /* Aseguramos que las imágenes se ajusten al contenedor */
+  margin-right: 30px;
+}
+
+article p {
+  line-height: 2;
+  text-align: justify;
+}
+
+/* Botón */
+.boton {
+  background-color: #00b8e4;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/* Barra lateral */
+aside ul {
+  list-style: none;
+  padding-left: 10px; /* Ajustamos el relleno izquierdo para que los elementos estén alineados */
+}
+
+aside ul li {
+  padding: 10px 0;
+}
+
+aside ul li:hover {
+  background-color: #00b8e4;
+}
+
+aside ul li a {
+  color: #00b8e4;
+  text-decoration: none;
+}
+
+aside ul li:hover a {
+  color: #ffffff;
+}
+
+/* Pie de página */
+footer {
+  background-color: #00b8e4;
+  padding-top: 40px;
+  margin-top: 30px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer .contenedor::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+footer .nosotros {
+  float: left;
+  width: 30%;
+  color: white;
+}
+
+footer .menu {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+footer nav {
+  width: auto;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+p.copyright {
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+/* Estilo para la galería de productos */
+.galeria-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilo para la galería de productos */
+.galeria-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilo para cada producto */
+.producto {
+  width: calc(25% - 10px); /* Utiliza calc para dejar espacio entre los productos */
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Espaciado horizontal entre productos */
+.producto:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* Botón de compra */
+.boton-compra {
+  background-color: #00b8e4;
+  color: #fff;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-compra:hover {
+  background-color: #0099cc;
+}
+
